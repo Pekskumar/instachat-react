@@ -75,7 +75,7 @@ function App() {
     <>
       {/* <ToastContainer /> */}
       <Toaster position="bottom-center" reverseOrder={false} />
-      <Router>{is_logged ? <AllRoutes /> : <AuthRoutes />}</Router>
+      <Router basename={process.env.PUBLIC_URL}>{is_logged ? <AllRoutes /> : <AuthRoutes />}</Router>
     </>
   );
 }
