@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/instachat-react/static/css/main.21289436.css",
-    "main.js": "/instachat-react/static/js/main.d6c1d4c4.js",
+    "main.js": "/instachat-react/static/js/main.d49ac3ac.js",
     "static/media/man.jpg": "/instachat-react/static/media/man.b1336ac669dd19bdfeea.jpg",
     "static/media/logo.png": "/instachat-react/static/media/logo.da8961bc6493502f43f1.png",
     "static/media/placeholder.webp": "/instachat-react/static/media/placeholder.aadba29c0fa8fe2da964.webp",
     "index.html": "/instachat-react/index.html",
     "main.21289436.css.map": "/instachat-react/static/css/main.21289436.css.map",
-    "main.d6c1d4c4.js.map": "/instachat-react/static/js/main.d6c1d4c4.js.map"
+    "main.d49ac3ac.js.map": "/instachat-react/static/js/main.d49ac3ac.js.map"
   },
   "entrypoints": [
     "static/css/main.21289436.css",
-    "static/js/main.d6c1d4c4.js"
+    "static/js/main.d49ac3ac.js"
   ]
 }
