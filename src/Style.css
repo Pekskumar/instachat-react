@@ -1,0 +1,666 @@
+/* variable */
+:root {
+    --main-color: #0a66c2;
+    --text: #000000e6;
+    --bg: #f4f2ee;
+    --sky-bg: #edf3f8;
+    --red: #cb112d;
+    --black: #000;
+    --white: #fff;
+    --border: #8c8c8c33;
+}
+
+/* variable end */
+
+/* container */
+
+#layout-wrapper .container-fluid {
+    min-height: 100%;
+    max-width: 1128px;
+    padding: 0;
+}
+
+#layout-wrapper .container {
+    max-width: 1128px;
+}
+
+body {
+    background-color: var(--bg) !important;
+}
+
+/* container end */
+
+/* btn */
+
+body .btn {
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 6px 16px;
+}
+
+body .btn-primary {
+    background-color: var(--main-color);
+    color: var(--white);
+}
+
+body .btn-primary:hover {
+    background-color: var(--main-color);
+    opacity: 0.9;
+}
+
+/* btn end */
+
+
+header {
+    padding: 0 24px;
+    z-index: 999;
+}
+
+header .header-right .dropdown .dropdown-toggle {
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 400;
+    justify-content: center;
+    min-height: 52px;
+    min-width: 80px;
+    position: relative;
+}
+
+header .header-right .dropdown .dropdown-toggle::after {
+    margin-left: 0;
+    margin-top: 4px;
+}
+
+header .header-right .dropdown .dropdown-toggle .avator {
+    width: 26px;
+    height: 26px;
+}
+
+header .notice-main {
+    min-height: 52px;
+    min-width: 80px;
+    justify-content: center;
+}
+
+
+header .notice-main .count-notice {
+    height: 18px;
+    width: 18px;
+    font-size: 12px;
+    font-weight: 700;
+    right: -2px;
+    background-color: var(--red);
+}
+
+header .main-menu .nav-link {
+    /* min-height: 52px; */
+    min-width: 80px;
+    font-size: 13px;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    color: #00000099;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+}
+
+header .main-menu .nav-link.active,
+header .main-menu .nav-link:hover {
+    position: relative;
+    font-weight: 400;
+    color: var(--text);
+}
+
+header .main-menu .nav-link.active:after {
+    content: '';
+    position: absolute;
+    background: var(--text);
+    width: 100%;
+    height: 1px;
+    bottom: -3px;
+    left: 0;
+}
+
+
+.tweet-wrap {
+    background: var(--white);
+    padding: 16px 30px 16px 16px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.tweet-header {
+    padding: 0;
+}
+
+.tweet-wrap .tweet-header2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tweet-header-text {
+    padding-left: 50px;
+}
+
+.tweet-header-text p {
+    font-size: 14px;
+}
+
+.new-post .avator,
+.avator {
+    width: 40px;
+    height: 40px;
+}
+
+textarea.form-control {
+    border-radius: 50px;
+    padding: 8px 25px;
+}
+
+.form-control::placeholder {
+    color: #000000bf;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+textarea.form-control:hover,
+textarea.form-control:active,
+textarea.form-control:focus {
+    background-color: var(--bg);
+    box-shadow: none;
+    border-color: var(--border);
+}
+
+body .form-control {
+    border-color: var(--border);
+}
+
+
+.tweet-header-info .create-post-btn .btn {
+    background-color: #8c8c8c33;
+    color: #0000004d;
+    border: none;
+}
+
+.tweet-header-info .create-post-btn .btn:hover,
+.tweet-header-info .create-post-btn .btn:active,
+.tweet-header-info .create-post-btn .btn:focus {
+    background-color: var(--main-color);
+    box-shadow: none;
+    color: var(--white);
+}
+
+.tweet-header-info .tweet-info-counts .btn {
+    padding: 0;
+    background-color: transparent;
+    width: 40px;
+    padding: 7px 0px;
+    border-radius: 8px;
+    position: relative;
+    /* z-index: 1; */
+    margin-right: 6px;
+}
+
+.tweet-header-info .emoji {
+    width: 40px;
+    padding: 8px 0px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tweet-header-info .tweet-info-counts .btn:hover,
+.tweet-header-info .emoji:hover {
+    background-color: var(--bg);
+
+}
+
+.tweet-header-info .emoji img {
+    height: 24px;
+    width: 24px;
+}
+
+.tweet-header-info span {
+    font-size: 12px;
+}
+
+.tweet-header-info {
+    font-size: 16px;
+    font-weight: 500
+}
+
+.tweet-header-info p {
+    font-weight: 400;
+    font-size: 12px;
+    word-break: break-all;
+    margin-bottom: 0;
+    color: #657786;
+}
+
+.tweet-info-counts div {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+    gap: 6px;
+}
+
+
+.tweet-info-counts div svg {
+    margin-right: 0;
+}
+
+.tweet-info-counts2 {
+    display: flex;
+    margin-left: 50px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+    margin-top: 20px;
+}
+
+.tweet-img-wrap {
+    margin-bottom: 20px;
+}
+
+.tweet-info-counts .like-hover {
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+.tweet-info-counts .like-hover:hover {
+    background-color: var(--bg);
+
+}
+
+.tweet-img-wrap {
+    padding-left: 50px;
+}
+
+.tweet-img-wrap img {
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.notice-main .btn {
+    padding: 0;
+}
+
+.delete-post .btn {
+    transform: rotate(90deg);
+    padding: 0;
+}
+
+.delete-post {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+
+/* tabs */
+.contact-chat {
+    background: var(--white);
+    padding: 16px 0;
+    border-radius: 10px;
+    /* width: 25%; */
+    /* max-height: 86vh; */
+    /* position: fixed; */
+}
+
+.nav-tabs .nav-link.active {
+    border: none;
+    position: relative;
+}
+
+.nav-tabs .nav-link {
+    min-width: 80px;
+    font-size: 13px;
+    padding: 0;
+    text-align: center;
+    color: var(--text);
+    font-weight: 400;
+    margin: 0 !important;
+    border: none !important;
+}
+
+.nav-tabs {
+    padding-bottom: 14px;
+}
+
+.nav-tabs .nav-link.active:after {
+    content: '';
+    position: absolute;
+    background: var(--text);
+    width: 100%;
+    height: 2px;
+    bottom: -16px;
+    left: 0;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border: none;
+    color: var(--text);
+}
+
+.nav-tabs .nav-link:focus-visible {
+    box-shadow: none;
+}
+
+.home-main {
+    height: 100%;
+    overflow: hidden;
+    padding-right: 0;
+}
+
+
+/* contact */
+.friend-main .tweet-header {
+    justify-content: space-between;
+}
+
+.friend-main .right {
+    display: flex;
+}
+
+.friend-main .right p {
+    font-weight: 500;
+}
+
+.friend-main .tweet-header-info .btn {
+    font-size: 12px;
+}
+
+
+
+/* chat */
+.chat-page {
+    /* background: var(--white); */
+    border-radius: 10px;
+    margin-bottom: 0px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 0;
+}
+
+.chat-page .chat-page-left,
+.chat-page .chat-page-right {
+    background: var(--white);
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+}
+
+
+.chat-page .chat-top {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
+    padding-bottom: 16px;
+}
+
+.chat-page .tweet-header {
+    border-radius: 0;
+    padding: 8px;
+}
+
+.chat-page .tweet-header.active {
+    border-left: 4px solid var(--main-color);
+    background-color: var(--sky-bg);
+}
+
+.chat-page .tweet-header:hover {
+    background-color: var(--bg);
+}
+
+.chat-page .chat-top h4 {
+    font-size: 16px;
+    color: var(--text);
+}
+
+.chat-page .chat-top .btn {
+    font-size: 12px;
+}
+
+.my-friend-list .avator {
+    width: 56px;
+    height: 56px;
+}
+
+/* input */
+
+body label {
+    font-size: 14px;
+    color: var(--text);
+}
+
+body .form-control {
+    border-radius: 50px;
+    font-size: 14px;
+    height: 45px;
+    padding: 8px 16px;
+}
+
+.chat-input .form-control {
+    background-color: var(--bg);
+    border-radius: 6px;
+
+}
+
+body .form-control:focus {
+    box-shadow: none;
+    border-color: var(--border);
+}
+
+.chat-input form .btn {
+    padding: 0px 12px;
+    border-radius: 6px;
+}
+
+.all-msg {
+    height: calc(100vh - 245px);
+
+}
+
+.border-right {
+    border-right: 1px solid var(--border);
+}
+
+.tweet-header-chat .tweet-header {
+    cursor: pointer;
+}
+
+.tweet-header-chat .tweet-header:hover {
+    background-color: transparent;
+}
+
+.dropdown-menu.show {
+    border: 1px solid var(--border);
+}
+
+.dropdown-menu.show a {
+    font-size: 14px;
+}
+
+.dropdown-menu.show a:hover {
+    background-color: var(--sky-bg);
+}
+
+.profile-card {
+    background: var(--white);
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    border: 0;
+}
+
+.profile-card .tweet-wrap {
+    margin-bottom: 0;
+    padding: 0;
+    min-width: inherit;
+    border: none;
+    border-right: 1px solid var(--border);
+    border-radius: 0;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.profile-card .tweet-wrap:last-child {
+    border: 0;
+    padding: 0;
+}
+
+.profile-card .tweet-wrap p,
+.profile-card .tweet-wrap h5 {
+    font-size: 14px;
+}
+
+/* .tweet-info-counts div svg{
+    color: var(--red);
+} */
+
+body .btn-close:focus {
+    box-shadow: none;
+}
+
+.modal .tweet-header-info p:first-child {
+    color: var(--text);
+    font-weight: 700;
+}
+
+.chat-input .emoji-icon {
+    position: absolute;
+    left: 10px;
+    bottom: 13px;
+}
+
+body .modal {
+    padding-left: 0 !important;
+}
+
+
+/* profile-main */
+.profile-main {
+    background: var(--white);
+    border-radius: 10px;
+    text-align: center;
+    order: 1;
+}
+
+.profile-main .profile-banner img {
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.profile-main .profile-info {
+    padding: 16px;
+}
+
+.profile-main .profile-info .profile-info-detail {
+    margin-top: -55px;
+}
+
+.profile-main .profile-info .profile-info-detail img {
+    margin-bottom: 10px;
+}
+
+.login-page .login-right{
+    padding: 0 30px;
+}
+
+.tab-content{padding: 0 16px;}
+
+@media (max-width: 1200px) {
+    /* .contact-chat {
+        width: 32%;
+    } */
+
+    header {
+        padding: 0;
+    }
+
+    #layout-wrapper .container-fluid,
+    #layout-wrapper .container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 991px) {
+
+
+    .contact-chat {
+        width: 100%;
+        margin-bottom: 10px;
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .chat-page .chat-page-left,
+    .chat-page .chat-page-right {
+        border: 0;
+    }
+
+    .chat-page {
+        background-color: transparent;
+        gap: 10px;
+    }
+
+    header .header-right .dropdown .dropdown-toggle,
+    header .notice-main,
+    header .main-menu .nav-link {
+        min-width: 60px;
+    }
+    .login-page .login-left{display: none;}
+    .login-page .login-right {
+        width: 100%;}
+}
+
+@media (max-width: 430px) {
+    .tweet-wrap .tweet-header2 .tweet-header-info {
+        width: 100%;
+        align-items: start;
+        text-align: start;
+    }
+
+    .tweet-info-counts2,
+    .tweet-header img {
+        margin-left: 0;
+    }
+
+    .tweet-header-text {
+        padding-left: 0;
+    }
+
+    .tweet-wrap .tweet-header2 .tweet-header-text {
+        padding-left: 0;
+    }
+
+    .tweet-header-info .emoji img {
+        margin: inherit;
+    }
+
+    .tweet-img-wrap {
+        padding-left: 0;
+    }
+
+    body .modal .tweet-header {
+        flex-direction: row;
+    }
+
+    body .modal .tweet-header img {
+        margin: inherit;
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+}
